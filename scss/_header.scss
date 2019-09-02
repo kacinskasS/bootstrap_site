@@ -1,0 +1,96 @@
+.navbar-light .navbar-nav {
+  &.navbar-skewed {
+    margin-bottom: 0;
+    .nav-item {
+      transform: skewX(-33deg);
+      background: theme-color('primary');
+      background-image: $bg-stripes-horizontal-secondary;
+      background-position: top right -5px;
+      background-repeat: no-repeat;
+      background-size: 103px 5px;
+      margin: 0 3px;
+      position: relative;
+
+      .nav-link {
+        transform: skewX(33deg);
+        color: #fff;
+        text-transform: uppercase;
+        padding-left: 2.25rem;
+        padding-right: 2.25rem;
+
+        @include hover-focus {
+          color: theme-color('secondary');
+        }
+      }
+    }
+    @include media-breakpoint-down(lg) {
+      .nav-item {
+        background-image: none;
+        transform: none;
+        .nav-link {
+          transform: none;
+        }
+      }
+    }
+  }
+
+  &.navbar-rounded {
+    margin-bottom: 0;
+    .nav-item {
+      font-size: 31px;
+      width: 1em;
+      height: 1em;
+      border-radius: 50%;
+      background: theme-color('primary');
+      align-self: center;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      margin: 0 5px;
+      .nav-link {
+        font-size: 1rem;
+        color: #fff;
+
+        @include hover-focus {
+          color: theme-color('secondary');
+        }
+      }
+    }
+
+    @include media-breakpoint-down(lg) {
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 16px;
+    }
+  }
+
+  .show > .nav-link,
+  .active > .nav-link,
+  .nav-link.show,
+  .nav-link.active {
+    color: theme-color('secondary');
+  }
+
+  .nav-spacer {
+    padding: 0 11px;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  //.navbar-light .navbar-nav {
+  //  background: theme-color('primary');
+  //  background-image: $bg-stripes-horizontal-secondary;
+  //  background-position: top right;
+  //  background-repeat: no-repeat;
+  //  background-size: 103px 5px;
+  //
+  //  .nav-item-skewed {
+  //    transform: none;
+  //    background: transparent;
+  //    background-image: none;
+  //    .nav-link {
+  //      transform: none;
+  //    }
+  //  }
+  //}
+}

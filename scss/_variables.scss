@@ -1,0 +1,38 @@
+$primary: #373435;
+$secondary: #ffe61c;
+$body-bg: #eaeaeb;
+$dark: #010101;
+$gray: #8a8989;
+
+$h6-font-size: 18px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1709px
+);
+
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1649px
+);
+
+$font-family-sans-serif:      "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$navbar-padding-y: 1.125rem;
+$navbar-padding-x: 0;
+
+$navbar-brand-padding-y: 1.75rem;
+//$navbar-brand-padding-y: ;
+
+$enable-rounded: false;
+
+$bg-stripes-horizontal-primary: str-replace(url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 411 20'%3e%3cpath fill='#{$primary}' d='M21.25 0 74.82 0 53.58 19.4 0 19.4 21.25 0ZM105.25 0 158.82 0 137.58 19.4 84 19.4 105.25 0ZM189.25 0 242.82 0 221.58 19.4 168 19.4 189.25 0ZM273.25 0 326.82 0 305.58 19.4 252 19.4 273.25 0ZM357.25 0 410.82 0 389.58 19.4 336 19.4 357.25 0Z'/%3e%3c/svg%3e"), "#", "%23");
+$bg-stripes-horizontal-secondary: str-replace(url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 411 20'%3e%3cpath fill='#{$secondary}' d='M21.25 0 74.82 0 53.58 19.4 0 19.4 21.25 0ZM105.25 0 158.82 0 137.58 19.4 84 19.4 105.25 0ZM189.25 0 242.82 0 221.58 19.4 168 19.4 189.25 0ZM273.25 0 326.82 0 305.58 19.4 252 19.4 273.25 0ZM357.25 0 410.82 0 389.58 19.4 336 19.4 357.25 0Z'/%3e%3c/svg%3e"), "#", "%23");
+$bg-stripes-vertical-primary: str-replace(url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 411'%3e%3cpath fill='#{$primary}' d='M.3 389.66.3 336.09 19.7 357.33 19.7 410.91.3 389.66ZM.3 305.66.3 252.09 19.7 273.33 19.7 326.91.3 305.66ZM.3 221.66.3 168.09 19.7 189.33 19.7 242.91.3 221.66ZM.3 137.66.3 84.09 19.7 105.33 19.7 158.91.3 137.66ZM.3 53.66.3 .09 19.7 21.33 19.7 74.91.3 53.66Z'/%3e%3c/svg%3e"), "#", "%23");
+$bg-stripes-vertical-secondary: str-replace(url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 411'%3e%3cpath fill='#{$secondary}' d='M.3 389.66.3 336.09 19.7 357.33 19.7 410.91.3 389.66ZM.3 305.66.3 252.09 19.7 273.33 19.7 326.91.3 305.66ZM.3 221.66.3 168.09 19.7 189.33 19.7 242.91.3 221.66ZM.3 137.66.3 84.09 19.7 105.33 19.7 158.91.3 137.66ZM.3 53.66.3 .09 19.7 21.33 19.7 74.91.3 53.66Z'/%3e%3c/svg%3e"), "#", "%23");

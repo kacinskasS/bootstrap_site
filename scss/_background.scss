@@ -1,0 +1,21 @@
+.bgr {
+  &-stripes {
+    &-primary {
+      background-image: $bg-stripes-vertical-primary;
+      background-size: 5px 103px;
+      background-repeat: repeat-y;
+      background-position: right top -5px;
+    }
+  }
+}
+
+.bgtr {
+  &-stripes {
+    &-primary {
+      background-image: $bg-stripes-horizontal-primary;
+      background-size: 103px 5px;
+      background-repeat: no-repeat;
+      background-position: right top;
+    }
+  }
+}
